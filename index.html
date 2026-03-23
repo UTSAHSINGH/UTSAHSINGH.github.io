@@ -1,0 +1,850 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsah Singh &#x2014; Developer & Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Vanilla Tilt JS for 3D Cards -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+  <!-- GitHub Contribution Graph -->
+  <link rel="preconnect" href="https://ghchart.rshah.org">
+</head>
+
+<body>
+
+  <!-- LIVE GAMER BACKGROUND -->
+  <div id="tsparticles"></div>
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div id="cur"></div>
+  <div id="ring"></div>
+
+  <!-- THEME TOGGLE -->
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+    <div class="theme-icon">&#x25D0;</div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a class="nav-logo magnetic" href="#home"><span>U</span>tsah Singh</a>
+    <div class="nav-links">
+      <a href="#about" class="magnetic">About</a>
+      <a href="#skills" class="magnetic">Skills</a>
+      <a href="#projects" class="magnetic">Work</a>
+      <a href="#experience" class="magnetic">Experience</a>
+      <a href="#open-source" class="magnetic">Open Source</a>
+      <a href="#achievements" class="magnetic">Achievements</a>
+      <a href="#education" class="magnetic">Education</a>
+      <a href="#certifications" class="magnetic">Certs</a>
+      <a href="#contact" class="magnetic">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <!-- Parallax Backgrounds -->
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: Text Content -->
+      <div class="hero-left">
+        <div class="hero-badge magnetic">
+          <div class="dot"></div>Open to Internships &amp; Full-Time Roles
+        </div>
+        <h1 class="magnetic">I build systems<br>that turn data<br>into <em>decisions</em></h1>
+        <p class="typewriter magnetic">Hello, I'm <span class="tw-text" id="tw"></span><span class="tw-cursor">|</span>
+        </p>
+        <div class="hero-pills">
+          <span class="hero-pill magnetic">Python</span><span class="hero-pill magnetic">Machine Learning</span>
+          <span class="hero-pill magnetic">Full-Stack</span><span class="hero-pill magnetic">Data Engineering</span>
+          <span class="hero-pill magnetic">C++</span><span class="hero-pill magnetic">Competitive Programming</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary magnetic">View My Work &#x2192;</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn-ghost magnetic"
+            style="border-color: var(--accent2); color: var(--text);">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            Resume PDF
+          </a>
+          <a href="https://github.com/UTSAHSINGH" target="_blank" class="btn-ghost magnetic">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/utsah-singh" target="_blank" class="btn-ghost magnetic">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:utsahsingh0219@gmail.com" class="btn-ghost magnetic">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Photo Card -->
+      <div class="hero-right">
+        <div class="photo-card">
+          <div class="photo-card-ring"></div>
+          <div class="photo-card-inner">
+            <img src="assets/photo.png" alt="Utsah Singh" class="photo-img">
+            <div class="photo-overlay"></div>
+            <div class="photo-curtain">
+              <div class="curtain-content">
+                <div class="curtain-icon">&#x1F464;</div>
+                <div class="curtain-label">Hover to reveal</div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating Badges -->
+          <div class="photo-badge pb1 magnetic">
+            <span>&#x1F3C6;</span> LeetCode Knight
+          </div>
+          <div class="photo-badge pb2 magnetic">
+            <span>&#x26A1;</span> DSA &middot; C++ &middot; Python
+          </div>
+          <div class="photo-badge pb3 magnetic">
+            <span>&#x1F393;</span> B.Tech CSE
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="m-item"><span class="m-star">&#x2726;</span>Data-Driven</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>ML Engineering</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Full-Stack Dev</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Problem Solver</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Algorithm Design</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Competitive Coder</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Dashboard Builder</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Scalable Systems</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Data-Driven</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>ML Engineering</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Full-Stack Dev</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Problem Solver</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Algorithm Design</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Competitive Coder</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Dashboard Builder</div>
+      <div class="m-item"><span class="m-star">&#x2726;</span>Scalable Systems</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-label">// about me</div>
+    <div class="sec-title">A Quick Glance</div>
+    <div class="about-layout">
+      <div class="about-bio reveal">
+        <p>I'm <strong>Utsah Singh</strong>, an engineering student driven to build scalable ML systems and data-driven
+          web products.</p>
+        <p><strong>Education:</strong> B.Tech CSE (3rd Year) at Lovely Professional University, Punjab (CGPA: 7.76).</p>
+        <p><strong>Goal:</strong> Seeking a full-time role to engineer high-impact solutions that turn complex data into
+          actionable decisions.</p>
+        <div class="social-row">
+          <a href="https://linkedin.com/in/utsah-singh" target="_blank" class="soc-btn magnetic">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>LinkedIn
+          </a>
+          <a href="https://github.com/UTSAHSINGH" target="_blank" class="soc-btn magnetic">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+            </svg>GitHub
+          </a>
+          <a href="mailto:utsahsingh0219@gmail.com" class="soc-btn magnetic">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>Email
+          </a>
+          <a href="tel:+918572843742" class="soc-btn magnetic">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.2 6.2l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>+91-8572843742
+          </a>
+        </div>
+      </div>
+      <!-- ANIMATED SVG RINGS -->
+      <div class="stat-rings reveal rd1">
+        <div class="ring-card">
+          <svg class="rsvg" viewBox="0 0 80 80">
+            <defs>
+              <linearGradient id="rg1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00E5FF" />
+                <stop offset="100%" stop-color="#FF007F" />
+              </linearGradient>
+            </defs>
+            <circle fill="none" stroke="#2A2656" stroke-width="6" cx="40" cy="40" r="35" />
+            <circle class="ring-fill" cx="40" cy="40" r="35" stroke="url(#rg1)" style="--off:24.2" />
+            <text x="40" y="44" text-anchor="middle" fill="#fff" font-size="13" font-family="Instrument Serif,serif"
+              font-weight="bold">89%</text>
+          </svg>
+          <div class="ring-label">ML Accuracy</div>
+          <div class="ring-sub">AgroSentinel XGBoost</div>
+        </div>
+        <div class="ring-card">
+          <svg class="rsvg" viewBox="0 0 80 80">
+            <defs>
+              <linearGradient id="rg2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#39FF14" />
+                <stop offset="100%" stop-color="#FF007F" />
+              </linearGradient>
+            </defs>
+            <circle fill="none" stroke="#2A2656" stroke-width="6" cx="40" cy="40" r="35" />
+            <circle class="ring-fill" cx="40" cy="40" r="35" stroke="url(#rg2)" style="--off:205" />
+            <text x="40" y="44" text-anchor="middle" fill="#fff" font-size="12" font-family="Instrument Serif,serif"
+              font-weight="bold">57th</text>
+          </svg>
+          <div class="ring-label">Global Rank</div>
+          <div class="ring-sub">Codeforces Div.3</div>
+        </div>
+        <div class="ring-card">
+          <svg class="rsvg" viewBox="0 0 80 80">
+            <defs>
+              <linearGradient id="rg3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00E5FF" />
+                <stop offset="100%" stop-color="#39FF14" />
+              </linearGradient>
+            </defs>
+            <circle fill="none" stroke="#2A2656" stroke-width="6" cx="40" cy="40" r="35" />
+            <circle class="ring-fill" cx="40" cy="40" r="35" stroke="url(#rg3)" style="--off:22" />
+            <text x="40" y="44" text-anchor="middle" fill="#fff" font-size="13" font-family="Instrument Serif,serif"
+              font-weight="bold">90%</text>
+          </svg>
+          <div class="ring-label">DSA Accuracy</div>
+          <div class="ring-sub">Programming Pathshala</div>
+        </div>
+        <div class="ring-card">
+          <svg class="rsvg" viewBox="0 0 80 80">
+            <defs>
+              <linearGradient id="rg4" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF007F" />
+                <stop offset="100%" stop-color="#39FF14" />
+              </linearGradient>
+            </defs>
+            <circle fill="none" stroke="#2A2656" stroke-width="6" cx="40" cy="40" r="35" />
+            <circle class="ring-fill" cx="40" cy="40" r="35" stroke="url(#rg4)" style="--off:53" />
+            <text x="40" y="44" text-anchor="middle" fill="#fff" font-size="13" font-family="Instrument Serif,serif"
+              font-weight="bold">7.76</text>
+          </svg>
+          <div class="ring-label">CGPA</div>
+          <div class="ring-sub">LPU B.Tech CSE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="sec-label">// toolkit</div>
+    <div class="sec-title">Skills & Technologies</div>
+    <div class="sec-sub">Proficiency across languages, ML frameworks, data tools, and competitive programming.</div>
+    <div class="skills-infographic">
+      <div class="skill-group reveal">
+        <div class="sg-head">
+          <div class="sg-icon" style="background:rgba(0,229,255,.1)">&#x2328;&#xFE0F;</div>
+          <div class="sg-title">Programming Languages</div>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Python</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:90%"></div>
+          </div><span class="sbp">90%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">C++</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:85%"></div>
+          </div><span class="sbp">85%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">JavaScript</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:78%"></div>
+          </div><span class="sbp">78%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Java</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:70%"></div>
+          </div><span class="sbp">70%</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd1">
+        <div class="sg-head">
+          <div class="sg-icon" style="background:rgba(255,0,127,.12)">&#x1F6E0;&#xFE0F;</div>
+          <div class="sg-title">Frameworks</div>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Scikit-learn</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:85%"></div>
+          </div><span class="sbp">85%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Pandas & Plotly</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:88%"></div>
+          </div><span class="sbp">88%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Streamlit</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:82%"></div>
+          </div><span class="sbp">82%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Flask</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:75%"></div>
+          </div><span class="sbp">75%</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd2">
+        <div class="sg-head">
+          <div class="sg-icon" style="background:rgba(57,255,20,.1)">&#x2699;&#xFE0F;</div>
+          <div class="sg-title">Tools</div>
+        </div>
+        <div class="tag-cloud">
+          <span class="tag ac magnetic">GitHub</span><span class="tag ac magnetic">Power BI</span><span
+            class="tag magnetic">MS Excel</span>
+          <span class="tag magnetic">Power Query</span><span class="tag magnetic">Jupyter</span><span
+            class="tag magnetic">Google Colab</span>
+          <span class="tag magnetic">Blender</span><span class="tag ac magnetic">REST APIs</span><span
+            class="tag ac magnetic">WebSockets</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd3">
+        <div class="sg-head">
+          <div class="sg-icon" style="background:rgba(0,229,255,.1)">&#x1F5C4;&#xFE0F;</div>
+          <div class="sg-title">Databases</div>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">SQL</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:85%"></div>
+          </div><span class="sbp">85%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">MySQL</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:80%"></div>
+          </div><span class="sbp">80%</span>
+        </div>
+        <div class="skill-bar-row"><span class="sbn">Vector DBs</span>
+          <div class="sbt">
+            <div class="sbf" style="--w:65%"></div>
+          </div><span class="sbp">65%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="sec-label">// selected work</div>
+    <div class="sec-title">Projects</div>
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 -->
+      <div class="proj-card reveal" data-tilt>
+        <div class="proj-card-inner">
+          <div class="pci">
+            <div>
+              <div class="proj-screenshot"
+                style="width: 100%; height: 180px; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; background: var(--bg2);">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                  style="width: 100%; height: 100%; object-fit: cover;" alt="AgroSentinel Screenshot">
+              </div>
+              <div class="proj-num">01 &middot; January 2026</div>
+              <div class="proj-title">AgroSentinel</div>
+              <p class="proj-desc">Crop Failure Risk Intelligence Platform &#x2014; scalable ML system powering data-driven
+                crop insurance decisions across 28 Indian states and 740+ districts.</p>
+              <div class="proj-metrics">
+                <span class="mbadge">&#x2726; 89% Accuracy</span>
+                <span class="mbadge">&#x2726; 0.188 RMSE</span>
+                <span class="mbadge vi">&#x25C8; 7,200+ Records</span>
+                <span class="mbadge am">&#x26A1; 40% Latency&#x2193;</span>
+                <span class="mbadge vi">&#x25C8; 95% Variance Retained</span>
+                <span class="mbadge">&#x2726; 28 States &middot; 15 Yrs Data</span>
+              </div>
+              <div class="tech-row">
+                <span class="tc">Python</span><span class="tc">XGBoost</span><span class="tc">Streamlit</span>
+                <span class="tc">Scikit-learn</span><span class="tc">Plotly</span><span class="tc">Pandas</span><span
+                  class="tc">PCA</span>
+              </div>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb gh magnetic">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+                </svg>
+                View Code
+              </a>
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb magnetic">&#x2197; Live Demo</a>
+            </div>
+          </div>
+          <div class="proj-chart">
+            <div class="pct">Model Accuracy by Crop Zone (%)</div>
+            <div class="mini-bars" id="bars1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="proj-card reveal" data-tilt>
+        <div class="proj-card-inner">
+          <div class="pci">
+            <div>
+              <div class="proj-screenshot"
+                style="width: 100%; height: 180px; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; background: var(--bg2);">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
+                  style="width: 100%; height: 100%; object-fit: cover;" alt="Algorithm Escape Room Screenshot">
+              </div>
+              <div class="proj-num">02 &middot; August 2025</div>
+              <div class="proj-title">Algorithm Escape Room</div>
+              <p class="proj-desc">Web-based gamified learning platform for algorithm practice with real-time feedback,
+                adaptive hints, and competitive programming simulation.</p>
+              <div class="proj-metrics">
+                <span class="mbadge">&#x2726; 30% Retention&#x2191;</span>
+                <span class="mbadge am">&#x26A1; 25% Speed&#x2191;</span>
+                <span class="mbadge vi">&#x25C8; Real-Time Feedback</span>
+                <span class="mbadge">&#x2726; Adaptive Difficulty</span>
+              </div>
+              <div class="tech-row">
+                <span class="tc">JavaScript</span><span class="tc">Python</span><span class="tc">Flask</span>
+                <span class="tc">WebSockets</span><span class="tc">HTML/CSS</span><span class="tc">Agile</span>
+              </div>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb gh magnetic">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+                </svg>
+                View Code
+              </a>
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb magnetic">&#x2197; Live Demo</a>
+            </div>
+          </div>
+          <div class="proj-chart">
+            <div class="pct">User Engagement Improvements (%)</div>
+            <div class="mini-bars" id="bars2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="proj-card reveal" data-tilt>
+        <div class="proj-card-inner">
+          <div class="pci">
+            <div>
+              <div class="proj-screenshot"
+                style="width: 100%; height: 180px; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; background: var(--bg2);">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                  style="width: 100%; height: 100%; object-fit: cover;" alt="Air Quality Dashboard Screenshot">
+              </div>
+              <div class="proj-num">03 &middot; March 2025</div>
+              <div class="proj-title">Air Quality Dashboard</div>
+              <p class="proj-desc">Real-time Excel-based air quality monitoring system with REST API automation, VBA
+                scripts, 24/7 alerting, and automated regulatory reporting.</p>
+              <div class="proj-metrics">
+                <span class="mbadge am">&#x26A1; 40% Retrieval&#x2193;</span>
+                <span class="mbadge">&#x2726; 24/7 Monitoring</span>
+                <span class="mbadge vi">&#x25C8; Auto Reports</span>
+                <span class="mbadge">&#x2726; REST API Driven</span>
+              </div>
+              <div class="tech-row">
+                <span class="tc">MS Excel</span><span class="tc">VBA</span>
+                <span class="tc">Power Query</span><span class="tc">REST APIs</span><span class="tc">Python</span>
+              </div>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb gh magnetic">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+                </svg>
+                View Code
+              </a>
+              <a href="https://github.com/UTSAHSINGH" target="_blank" class="plb magnetic">&#x2197; View Project</a>
+            </div>
+          </div>
+          <div class="proj-chart">
+            <div class="pct">System Performance Improvements (%)</div>
+            <div class="mini-bars" id="bars3"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-label">// career</div>
+    <div class="sec-title">Experience</div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"
+          style="background:var(--accent);box-shadow:0 0 0 4px rgba(0,229,255,.15),0 0 12px rgba(0,229,255,.8)"></div>
+        <div class="tl-date">June 2025 &#x2013; July 2025</div>
+        <div class="tl-title">DSA Training</div>
+        <div class="tl-place"><a href="https://www.programmingpathshala.com" target="_blank"
+            style="color:var(--accent);text-decoration:none;">Programming Pathshala</a></div>
+        <span class="tl-badge">C++, Python, Data Structures &amp; Algorithms, Codeforces, LeetCode, GeeksforGeeks</span>
+        <ul style="color: var(--muted); margin-top: 0.8rem; padding-left: 1rem; font-size: 0.9rem; line-height: 1.7;">
+          <li>Executed daily algorithmic problem-solving tasks with <strong style="color:var(--text)">90%
+              accuracy</strong>, enhancing proficiency in data structures and algorithms.</li>
+          <li>Upgraded technical expertise through continuous learning and advanced training, achieving <strong
+              style="color:var(--text)">20% faster coding efficiency</strong>.</li>
+          <li>Troubleshot and optimized complex problems using advanced techniques, decreasing average solution time
+            significantly.</li>
+          <li>Practiced and competed on <strong style="color:var(--text)">Codeforces, LeetCode,</strong> and <strong
+              style="color:var(--text)">GeeksforGeeks</strong>, improving rank and speed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN SOURCE -->
+  <section id="open-source" class="os-section">
+    <div class="sec-label">// contributions</div>
+    <div class="sec-title">Open Source</div>
+    <div class="sec-sub">Building and contributing to the developer community. Here are my recent GitHub activities.
+    </div>
+
+    <div class="gh-container">
+      <div class="gh-top-row">
+        <div class="gh-stats-wrap reveal">
+          <div class="gh-chart-title">Overview</div>
+          <div class="custom-os-stats">
+            <div class="os-stat-box">
+              <div class="os-stat-num">533</div>
+              <div class="os-stat-label">Contributions (This Year)</div>
+            </div>
+            <div class="os-stat-box">
+              <div class="os-stat-num">12</div>
+              <div class="os-stat-label">Total Stars</div>
+            </div>
+            <div class="os-stat-box">
+              <div class="os-stat-num">3</div>
+              <div class="os-stat-label">Repositories</div>
+            </div>
+          </div>
+        </div>
+        <div class="gh-chart-wrap reveal rd1">
+          <div class="gh-chart-title">Contribution Graph</div>
+          <div class="gh-chart-inner">
+            <div class="gh-calendar-header">2026 Contribution Graph</div>
+            <div class="calendar-scroll">
+              <div class="calendar-scroll-inner">
+                <div class="calendar-months" id="calendar-months"></div>
+                <div class="calendar-main">
+                  <div class="calendar-days-y">
+                    <span></span>
+                    <span>Mon</span>
+                    <span></span>
+                    <span>Wed</span>
+                    <span></span>
+                    <span>Fri</span>
+                    <span></span>
+                  </div>
+                  <div id="gh-calendar-custom" class="gh-calendar-wrapper"></div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-legend">
+              <span>Less</span>
+              <div class="legend-box" data-level="0"></div>
+              <div class="legend-box" data-level="1"></div>
+              <div class="legend-box" data-level="2"></div>
+              <div class="legend-box" data-level="3"></div>
+              <div class="legend-box" data-level="4"></div>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gh-repos-wrap">
+        <div class="gh-repos-title reveal rd1">Recent Repositories</div>
+        <div id="github-repos" class="github-repos-grid">
+          <!-- Repos will be injected here via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="ach-section" id="achievements">
+    <div class="sec-label">// recognition</div>
+    <div class="sec-title">Achievements</div>
+    <div class="ach-layout">
+      <a href="https://leetcode.com/u/UTSAHSINGH/" target="_blank" class="ach-big reveal">
+        <div>
+          <div class="ach-eyebrow">LeetCode Contest Ranking</div>
+          <div class="ach-num">120<sup style="font-size:2rem">th</sup></div>
+          <p class="ach-desc">Achieved a global rank of <strong style="color:var(--text)">120</strong> in LeetCode
+            contests and earned the official <strong>Knight</strong> badge &#x2014; a testament to consistent algorithmic
+            practice and competitive problem-solving speed.</p>
+          <div class="ach-plat"><span>&#x2694;&#xFE0F;</span> LeetCode &middot; Knight</div>
+        </div>
+        <div class="podium" id="podium"></div>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:1.2rem;">
+        <a href="https://codeforces.com" target="_blank" class="ach-small reveal rd1">
+          <div class="ach-eyebrow">CP Biweekly Contest &middot; July 2025</div>
+          <div class="ach-num" style="font-size:3.5rem">5<sup style="font-size:1.5rem">th</sup></div>
+          <p class="ach-desc">Secured Rank 5th in competitive programming biweekly contests</p>
+          <div class="ach-plat"><span>&#x1F3C6;</span> CP Biweekly Contest</div>
+        </a>
+        <a href="https://www.programmingpathshala.com" target="_blank" class="ach-small reveal rd2">
+          <div class="ach-eyebrow">DSA Training &middot; Jun&#x2013;Jul 2025</div>
+          <div class="ach-num am" style="font-size:3.5rem">90%</div>
+          <p class="ach-desc">Daily algorithmic tasks &middot; 90% accuracy &middot; 20% faster coding efficiency achieved</p>
+          <div class="ach-plat"><span>&#x1F4DA;</span> Programming Pathshala</div>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin-top:3.5rem;">
+      <div class="sec-label">// coding platforms</div>
+      <div class="platforms-grid">
+        <a href="https://codeforces.com/profile/UTSAHSINGH" target="_blank" class="plat-card cf reveal">
+          <div class="plat-logo">&#x1F534;</div>
+          <div class="plat-name">Codeforces</div>
+          <div class="plat-stat">Pupil</div>
+          <div class="plat-sub">Competitive Programming</div>
+        </a>
+        <a href="https://leetcode.com/u/UTSAHSINGH/" target="_blank" class="plat-card lc reveal rd1">
+          <div class="plat-logo">&#x1F7E0;</div>
+          <div class="plat-name">LeetCode</div>
+          <div class="plat-stat">250+ Solved</div>
+          <div class="plat-sub">Knight &middot; Global Rank 120</div>
+        </a>
+        <div class="plat-sub">Algorithms & Data Structures</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="sec-label">// background</div>
+    <div class="sec-title">Education</div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-date">August 2023 &#x2013; Present</div>
+        <div class="tl-title">B.Tech &#x2014; Computer Science & Engineering</div>
+        <div class="tl-place">Lovely Professional University, Punjab, India</div>
+        <span class="tl-badge">CGPA: 7.76</span>
+        <div style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--muted);"><strong>Coursework:</strong> Data
+          Structures & Algorithms, Machine Learning, Cloud Computing, Database Management Systems, Object-Oriented
+          Programming.</div>
+      </div>
+      <div class="tl-item reveal rd1">
+        <div class="tl-dot"
+          style="background:var(--accent2);box-shadow:0 0 0 4px rgba(255,0,127,.15),0 0 12px rgba(255,0,127,.8)"></div>
+        <div class="tl-date">April 2022 &#x2013; March 2023</div>
+        <div class="tl-title">Intermediate (Class XII)</div>
+        <div class="tl-place">Kendriya Vidyalaya, Rajasthan, India</div>
+        <span class="tl-badge"
+          style="border-color:var(--accent2);background:rgba(255,0,127,.1);color:var(--accent2)">73%</span>
+      </div>
+      <div class="tl-item reveal rd2">
+        <div class="tl-dot"
+          style="background:var(--accent3);box-shadow:0 0 0 4px rgba(57,255,20,.15),0 0 12px rgba(57,255,20,.8)"></div>
+        <div class="tl-date">April 2020 &#x2013; March 2021</div>
+        <div class="tl-title">Matriculation (Class X)</div>
+        <div class="tl-place">Kendriya Vidyalaya, Rajasthan, India</div>
+        <span class="tl-badge"
+          style="border-color:var(--accent3);background:rgba(57,255,20,.1);color:var(--accent3)">91%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" style="background:var(--bg2)">
+    <div class="sec-label">// credentials</div>
+    <div class="sec-title">Certifications</div>
+    <div class="certs-row">
+      <a href="https://www.hackerrank.com/certificates/ad0cf0533624" target="_blank" class="cert-card reveal">
+        <img src="assets/sql.png" alt="SQL Advanced Certificate"
+          style="width:100%;height:auto;display:block;border-radius:8px;margin-bottom:1rem;">
+        <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(0,229,255,.15),rgba(0,229,255,.05))">
+          &#x1F3C5;</div>
+        <div class="cert-name">SQL Advanced</div>
+        <div class="cert-by">HackerRank</div>
+        <div class="cert-date">January 2026</div>
+        <div class="cert-domain" style="font-size: 0.8rem; color: var(--accent); margin-top: 0.2rem;">Domain: Databases
+          <span style="margin-left:5px">&#x2B50;</span>
+        </div>
+        <div class="cert-arrow">View Certificate &#x2192;</div>
+      </a>
+      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S133730055904233135.pdf"
+        target="_blank" class="cert-card reveal rd1">
+        <img src="assets/cloud.png" alt="Cloud Computing Certificate"
+          style="width:100%;height:auto;display:block;border-radius:8px;margin-bottom:1rem;">
+        <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(255,0,127,.15),rgba(255,0,127,.05))">
+          &#x2601;&#xFE0F;</div>
+        <div class="cert-name">Cloud Computing</div>
+        <div class="cert-by">NPTEL</div>
+        <div class="cert-date">April 2025</div>
+        <div class="cert-domain" style="font-size: 0.8rem; color: var(--accent2); margin-top: 0.2rem;">Domain: Cloud
+          Infra <span style="margin-left:5px">&#x1F947;</span></div>
+        <div class="cert-arrow">View Certificate &#x2192;</div>
+      </a>
+      <a href="https://coursera.org/share/8e27238bcdddd7388a3c13b8b1bd5dd3" target="_blank"
+        class="cert-card reveal rd2">
+        <img src="assets/network.png" alt="Computer Communication Certificate"
+          style="width:100%;height:auto;display:block;border-radius:8px;margin-bottom:1rem;">
+        <div class="cert-icon-wrap" style="background:linear-gradient(135deg,rgba(57,255,20,.15),rgba(57,255,20,.05))">
+          &#x1F310;</div>
+        <div class="cert-name">Computer Communication</div>
+        <div class="cert-by">University of Colorado</div>
+        <div class="cert-date">December 2024</div>
+        <div class="cert-domain" style="font-size: 0.8rem; color: var(--accent3); margin-top: 0.2rem;">Domain:
+          Networking <span style="margin-left:5px">&#x1F3C6;</span></div>
+        <div class="cert-arrow">View Certificate &#x2192;</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- WORK TICKER -->
+  <div class="work-ticker">
+    <div class="wt-track">
+      <div class="wt-item">Open to Internships</div>
+      <div class="wt-item">Open to Full-Time Roles</div>
+      <div class="wt-item">Open to Freelance Projects</div>
+      <div class="wt-item">Available Now</div>
+      <div class="wt-item">Open to Internships</div>
+      <div class="wt-item">Open to Full-Time Roles</div>
+      <div class="wt-item">Open to Freelance Projects</div>
+      <div class="wt-item">Available Now</div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding: 4rem 10%; max-width: 1200px; margin: 0 auto;">
+    <div class="sec-label">// reach out</div>
+    <div class="sec-title">Contact Me</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; margin-top: 2rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="font-family: var(--font-head); font-size: 1.8rem; margin-bottom: 1rem;">Let's Build Something</h3>
+        <p style="color: var(--muted); margin-bottom: 2rem;">Available for internships, full-time roles & freelance
+          projects.</p>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <a href="mailto:utsahsingh0219@gmail.com" class="soc-btn magnetic" style="width: fit-content;"><svg width="16"
+              height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>utsahsingh0219@gmail.com</a>
+          <a href="#" class="soc-btn magnetic" style="width: fit-content;"><svg width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>Punjab, India</a>
+          <a href="https://github.com/UTSAHSINGH" target="_blank" class="soc-btn magnetic"
+            style="width: fit-content;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 7.41c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+            </svg>GitHub</a>
+          <a href="https://linkedin.com/in/utsah-singh" target="_blank" class="soc-btn magnetic"
+            style="width: fit-content;"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>LinkedIn</a>
+        </div>
+      </div>
+      <div
+        style="flex: 1; min-width: 300px; background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
+          <input type="text" placeholder="Name" required
+            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; font-family: inherit; font-size: 0.95rem;">
+          <input type="email" placeholder="Email" required
+            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; font-family: inherit; font-size: 0.95rem;">
+          <textarea placeholder="Message" rows="5" required
+            style="width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: #fff; font-family: inherit; resize: vertical; font-size: 0.95rem;"></textarea>
+          <button type="submit" class="btn-primary magnetic"
+            style="width: 100%; border: none; cursor: pointer; justify-content: center; height: 3rem;">Send
+            Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name magnetic">Utsah Singh</div>
+    <div class="footer-links">
+      <a href="#about" class="magnetic">About</a>
+      <a href="#skills" class="magnetic">Skills</a>
+      <a href="#projects" class="magnetic">Work</a>
+      <a href="#experience" class="magnetic">Experience</a>
+      <a href="#open-source" class="magnetic">Open Source</a>
+      <a href="#achievements" class="magnetic">Achievements</a>
+      <a href="#education" class="magnetic">Education</a>
+      <a href="#certifications" class="magnetic">Certs</a>
+      <a href="#contact" class="magnetic">Contact</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Utsah Singh. All rights reserved.</div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+    </svg>
+    Email copied to clipboard
+  </div>
+
+  <!-- Live Background -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <!-- Vanilla Framer Motion (Motion) -->
+  <script type="module">
+    import { animate, inView, stagger, scroll } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
+    // Example Motion setup: Staggered reveal for timeline items
+    inView(".timeline", ({ target }) => {
+      animate(
+        target.querySelectorAll(".tl-item"),
+        { opacity: [0, 1], y: [50, 0] },
+        { delay: stagger(0.15), duration: 0.6, easing: "ease-out" }
+      );
+    });
+
+    // Example Motion setup: Reveal for tech stack
+    inView(".cert-card, .plat-card, .sp-widget", ({ target }) => {
+      animate(target, { opacity: [0, 1], scale: [0.9, 1] }, { duration: 0.5, easing: "spring" });
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
